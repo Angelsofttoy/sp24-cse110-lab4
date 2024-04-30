@@ -42,3 +42,27 @@ let student = {
 + e) student.courseLoad[0];
 
 ### Basic Operations & Type Conversion
+
+13.
+ + a) '3' + 2 = '32' // The 2 in the latter place is converted to a stirng to concatenate with 3. 
+    + b) '3' - 2 = 1 // The 3 is converted to a numerical 3 because substraction is performed on a numeric value. 
+    +  c) 3 + null = 3 // null is equivalent to 0. 
+    + d) '3' + null = '3null' // null is converted to 3 for addition
+    + e) true + 3 = 4 //true is equivalent to 1 in case of addition
+    + f) false + null = 0 //both evalutes to numerical value of 0
+    + g) '3' + undefined = '3undefined' //undefined converted to string for addition
+    + h)'3' - undefined = NaN //subtracting a non-numerical value from a numerical one makes the result not a number. 
+
+14. 
++ a) '2' > 1 = true // JavaScript's Loose Type Comparision coverts 2 to 1 for the result
+    + b) '2' < '12' = false // In this case, it performs a lexigraphical comparision, so "2" is greater than "12"
+    + c) 2 == '2' = true // "2" is converted to its numerical type for comparison
+    + d) 2 === '2' = false // the strict equal sign recongizes the type mismatch. 
+    + e) true == 2 = false // true is equivalent to 1. 
+    + f) true === Boolean(2) = true // Since both values are boolean, and any non zero number evaluates to true, so the end result is also true. 
+
+15. The == operator is a loose equal sign, it does not consider/could convert type when comparing two varibales. The triple equal sign consider variable type and is more strict than the == operator. 
+
+17. The function will add 2 to each of the original value of the array because of the do something function, so it will return [2, 4, 6] at the end. 
+
+19. The result will be 1, 4, 3, 2. This is because the function will first execute 1 and 4, then 3 and 2 accordingly based on their time out length. 
